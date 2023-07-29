@@ -32,7 +32,7 @@ def upload_files():
     return render_template('index.html', not_in_followers=not_in_followers_list)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=False,host='0.0.0.0')
 
 
 # if __name__ == "__main__":
