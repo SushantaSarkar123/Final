@@ -1,9 +1,9 @@
 from flask import Flask, render_template, request
-from flask_ngrok import run_with_ngrok  # Correct the function name here
+#from flask_ngrok import run_with_ngrok  # Correct the function name here
 from bs4 import BeautifulSoup
 
 app = Flask(__name__)
-run_with_ngrok(app)
+#run_with_ngrok(app)
 
 def extract_profiles_from_html(file_content):
     soup = BeautifulSoup(file_content, 'html.parser')
